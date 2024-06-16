@@ -26,7 +26,7 @@ Before you begin, make sure you have [Node.js](https://nodejs.org/) installed on
 ***npm install***
 
 4. Launch the backend server:
-**npm run dev**
+***npm run dev***
 
 
 Now, both the frontend and backend servers should be running, and you can begin using the rastKanban application.
