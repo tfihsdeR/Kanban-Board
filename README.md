@@ -13,23 +13,23 @@ Before you begin, make sure you have [Node.js](https://nodejs.org/) installed on
 - Navigate to the frontend directory:
     - ***cd rastKanban-frontend***
 
-* Install the necessary dependencies:
- * ***npm install***
+- Install the necessary dependencies:
+    - ***npm install***
 
-* Start the development server:
- * ***npm run dev***
+- Start the development server:
+    - ***npm run dev***
 
 
 ## Running the Backend
-* Open a new terminal window.
-* Navigate to the backend directory:
- * ***cd rastKanban-Backend***
+- Open a new terminal window.
+- Navigate to the backend directory:
+    - ***cd rastKanban-Backend***
 
-* Install any required dependencies:
- * ***npm install***
+- Install any required dependencies:
+    - ***npm install***
 
-* Launch the backend server:
- * ***npm run dev***
+- Launch the backend server:
+    - ***npm run dev***
 
 
 Now, both the frontend and backend servers should be running, and you can begin using the rastKanban application.
