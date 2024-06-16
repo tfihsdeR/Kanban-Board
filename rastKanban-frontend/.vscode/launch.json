@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Next: Node",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/next",
+            "runtimeArgs": [
+                "dev"
+            ],
+            "env": {
+                "NODE_OPTIONS": "--inspect"
+            },
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Next: Chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "pwa-msedge",
+            "request": "launch",
+            "name": "Next: Edge",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Next: Full (Chrome)",
+            "configurations": [
+                "Next: Node",
+                "Next: Chrome"
+            ]
+        },
+        {
+            "name": "Next: Full (Edge)",
+            "configurations": [
+                "Next: Node",
+                "Next: Edge"
+            ]
+        }
+    ]
+}

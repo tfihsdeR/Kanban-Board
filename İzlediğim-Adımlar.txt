@@ -1,0 +1,9 @@
+1- İlk olarak frontend tarafında tasarım fikrimi oluşturdum. Ardondan frontend ve backend mimari yapısını ve componentleri planladım. Ardından iki tarafın dökümanlarını oluşturup projemi başlattım.
+2- Öncelikle backend tarafını tamamlayıp frontend kısmı için gerekli hazırlıkları tamamladım. Bu hazırlıklarda database (MongoDb) ve componentler öncelik taşımaktadır.
+3- Backend middleware'larımı ve utils'leri hazırladıktan sonra modelleri ve controller'ları hazırladım.
+
+4- Frontend çalışmamda ana sayfa (Hero Page) oluşturup projemin neye benzediğini kullanıcıya gösterdim.
+5- Kullanıcının ilk olarak bir adet Kanban Board oluşturması için yönlendirmemi yaptım.
+6- Boardların bulunduğu sayfada yeni boardlar oluşturulup, güncellemeleri ve silme işlemleri yapılabilmesi için özellikler ve butonlar ekledim. Her bir board bilgileri kartlarda gösterilmektedir ve kartlardan tasklara yönlendirme yapılmaktadır.
+7- Seçilen board için tasklara yönlendirildikten sonra taskların kolonları içerisinde tut-sürükle-bırak işlemleri hazırlandı.
+8- Her aşamada responsivelik aynı anda oluşturuldu. Proje sonuna bırakılmadı.
