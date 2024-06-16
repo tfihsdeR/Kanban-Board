@@ -2,13 +2,16 @@
 
 Welcome to the rastKanban project! This guide will help you set up and run the frontend and backend parts of the application.
 
+## Postman Collection
+***https://elements.getpostman.com/redirect?entityId=28458364-887c4d93-9d5a-4268-8cfb-dffe67fcc629&entityType=collection***
+
 ## Prerequisites
 Before you begin, make sure you have [Node.js](https://nodejs.org/) installed on your system.
 
 ## Running the Frontend
-1. Open your terminal.
-2. Navigate to the frontend directory:
-***cd rastKanban-frontend***
+- Open your terminal.
+- Navigate to the frontend directory:
+    -***cd rastKanban-frontend***
 
 3. Install the necessary dependencies:
 ***npm install***
