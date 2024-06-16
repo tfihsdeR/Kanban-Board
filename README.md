@@ -11,7 +11,7 @@ Before you begin, make sure you have [Node.js](https://nodejs.org/) installed on
 ## Running the Frontend
 - Open your terminal.
 - Navigate to the frontend directory:
-    - ***cd rastKanban-frontend***
+    - ***cd kanbantask-frontend***
 
 - Install the necessary dependencies:
     - ***npm install***
