@@ -11,6 +11,7 @@ interface ITask extends Document {
     updatedAt?: Date;
     updatedBy?: string;
     description?: string;
+    badge?: string;
 }
 
 const taskSchema = new Schema<ITask>({
@@ -55,6 +56,10 @@ const taskSchema = new Schema<ITask>({
         default: "Add User"
     },
     description: {
+        type: String,
+        required: false
+    },
+    badge: {
         type: String,
         required: false
     }

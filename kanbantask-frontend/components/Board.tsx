@@ -120,6 +120,8 @@ const Board: React.FC<{ board: IKanbanBoard }> = ({ board }) => {
         const updatedTask: ITask = {
             title: formData.get('title') as string,
             boardId: board._id!,
+            description: formData.get('description') as string,
+            badge: formData.get('badge') as string,
         }
 
         await dispatch(createTask({ task: updatedTask }))
@@ -144,7 +146,7 @@ const Board: React.FC<{ board: IKanbanBoard }> = ({ board }) => {
                     {isCreate && (
                         <Modal
                             closeModal={CloseModal}
-                            title="Create New Task"
+                            modalTitle="Create New Task"
                             isCreate={isCreate}
                             action={CreateTask}
                             value={board._id!}

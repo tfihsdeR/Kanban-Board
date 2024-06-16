@@ -18,6 +18,7 @@ export interface ITask {
     updatedAt?: Date;
     updatedBy?: string;
     description?: string;
+    badge?: string;
 }
 
 export enum Status {

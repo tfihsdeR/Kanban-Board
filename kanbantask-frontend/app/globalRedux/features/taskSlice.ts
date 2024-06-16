@@ -22,7 +22,8 @@ export const initialState: TaskState = {
         createdAt: new Date(),
         updatedAt: new Date(),
         updatedBy: '',
-        createdBy: ''
+        createdBy: '',
+        badge: ''
     },
     tasks: [],
     message: null,

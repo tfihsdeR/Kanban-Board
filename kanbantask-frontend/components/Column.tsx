@@ -45,6 +45,8 @@ const Column: React.FC<IColumnProps> = ({
         const updatedTask: ITask = {
             ...editableTask,
             title: formData.get("title") as string,
+            description: formData.get("description") as string,
+            badge: formData.get("badge") as string
         }
 
         await dispatch(updateTask({ task: updatedTask }))
@@ -80,7 +82,7 @@ const Column: React.FC<IColumnProps> = ({
                             >
                                 {(provided) => (
                                     <div
-                                        className="bg-gray-700 rounded p-2 mb-2 text-white flex justify-between"
+                                        className="bg-gray-700 rounded p-2 mb-2 text-white flex justify-between items-center"
                                         ref={provided.innerRef}
                                         {...provided.draggableProps}
                                         {...provided.dragHandleProps}
@@ -89,9 +91,13 @@ const Column: React.FC<IColumnProps> = ({
                                         }
                                         onMouseLeave={() => setHoverIndex(null)}
                                     >
-                                        {task.title}
+                                        <div className="flex flex-col">
+                                            <h3 className="text-xl">{task.title}</h3>
+                                            <span className="text-base">{task.description}</span>
+                                            {task.badge && <span className="text-sm rounded-md border border-spacing-1 border-white px-2 py-1 mt-2">{task.badge}</span>}
+                                        </div>
                                         {hoverIndex === index && (
-                                            <div className="flex gap-5">
+                                            <div className="flex gap-5 flex-wrap">
                                                 <span
                                                     className="text-xs text-gray-400 mt-1 cursor-pointer"
                                                     onClick={() =>
@@ -125,13 +131,16 @@ const Column: React.FC<IColumnProps> = ({
                     isEdit={isEdit}
                     value={editableTask!._id!}
                     action={handleEditTask}
-                    title="Edit Task"
+                    modalTitle="Edit Task"
+                    title={editableTask!.title}
+                    description={editableTask!.description}
+                    badge={editableTask!.badge}
                 />
             )}
             {isDelete && (
                 <Modal
                     closeModal={closeDeleteModal}
-                    title="Are you sure you want to delete this task?"
+                    modalTitle="Are you sure you want to delete this task?"
                     value={editableTask!._id!}
                     action={handleDeleteTask}
                     isDelete={isDelete}
